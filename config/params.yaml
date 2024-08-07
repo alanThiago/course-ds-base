@@ -1,0 +1,20 @@
+base:
+  random_state: 42
+
+data:
+  iris_dataset: 'data/raw/iris_dataset.csv'
+  iris_featurized: 'data/processed/iris_processed_dataset.csv'
+  test_size: 0.2
+  trainset_path: 'data/processed/train_iris.csv'
+  testset_path: 'data/processed/test_iris.csv'
+
+train:
+  clf_params:
+    C: 0.001
+    solver: 'lbfgs'
+    max_iter: 100
+  model_path: 'models/model.joblib'
+
+evaluate:
+  metrics_file: 'reports/metrics.json'
+  confusion_matrix_image: 'reports/confusion_matrix.png'
